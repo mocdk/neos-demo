@@ -47,8 +47,5 @@
           position: 4
   options:
     pluginViews:
-      Courses:
+      CountryList:
         label: List
-        controllerActions:
-          MOC\Demo\Controller\CountryController:
-            - index
