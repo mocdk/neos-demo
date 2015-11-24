@@ -15,7 +15,7 @@
 			</neos:contentElement.wrap>
 
 			<f:if condition="{node.properties.image}">
-				<media:image asset="{node.properties.image}" maximumWidth="450" alt="Article image" class="img-rounded" />
+				<media:image asset="{node.properties.image}" maximumHeight="350" alt="Article image" class="img-rounded" />
 			</f:if>
 
 			{content.main -> f:format.raw()}

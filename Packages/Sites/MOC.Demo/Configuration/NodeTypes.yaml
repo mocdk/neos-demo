@@ -22,3 +22,9 @@
         reloadIfChanged: true
         inspector:
           group: settings
+
+'MOC.Demo:NewsArticleList':
+  superTypes: ['TYPO3.Neos:Content']
+  ui:
+    label: 'News article list'
+    icon: 'icon-list'

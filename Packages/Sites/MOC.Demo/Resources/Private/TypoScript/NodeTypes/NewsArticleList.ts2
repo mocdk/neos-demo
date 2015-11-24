@@ -1,0 +1,14 @@
+prototype(MOC.Demo:NewsArticleList) {
+
+	newsArticles = TYPO3.TypoScript:Collection {
+
+		collection = ${q(node).parent().parent().find('[instanceof MOC.Demo:NewsArticle]').get()}
+		itemName = 'newsArticleNode'
+		itemRenderer = TYPO3.TypoScript:Template {
+			templatePath = 'resource://MOC.Demo/Private/Templates/NodeTypes/NewsArticleListSubject.html'
+			newsArticle = ${newsArticleNode}
+			firstText = ${q(newsArticleNode).find('[instanceof TYPO3.Neos.NodeTypes:Text]').get(0)}
+		}
+		@process.wrap = ${'<div class="news-articles">' + value + '</div>'}
+	}
+}

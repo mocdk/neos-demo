@@ -1,0 +1,25 @@
+{namespace neos=TYPO3\Neos\ViewHelpers}
+{namespace media=TYPO3\Media\ViewHelpers}
+
+<div class="row">
+	<div class="col-md-12">
+
+		<neos:link.node node="{newsArticle}">
+			<h2>{newsArticle.properties.headline}</h2>
+
+			<f:if condition="{newsArticle.properties.image}">
+				<div>
+					<media:image asset="{newsArticle.properties.image}" maximumHeight="100" alt="Article image" class="img-rounded" />
+				</div>
+			</f:if>
+		</neos:link.node>
+
+
+		<f:if condition="{firstText}">
+			<f:format.crop maxCharacters="30">
+				{firstText.properties.text -> f:format.stripTags()}
+			</f:format.crop>
+		</f:if>
+
+	</div>
+</div>

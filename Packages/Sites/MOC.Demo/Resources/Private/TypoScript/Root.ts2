@@ -1,6 +1,7 @@
 /**
  * Root TypoScript template for the neosdemo.dev site
  */
+include: NodeTypes/*.ts2
 
 prototype(MOC.Demo:DefaultPage) < prototype(Page) {
 	head {
