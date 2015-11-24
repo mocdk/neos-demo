@@ -3,14 +3,8 @@
 
 <head>
 	<title>MOC.Demo</title>
-	<f:section name="stylesheets">
-		<!-- Put your stylesheet inclusions here, they will be included in your website by TypoScript -->
-		<link rel="stylesheet" href="{f:uri.resource(path: 'css/bootstrap.min.css', package: 'MOC.Demo')}">
-		<link rel="stylesheet" href="{f:uri.resource(path: 'css/style.css', package: 'MOC.Demo')}">
-	</f:section>
-	<f:section name="headScripts">
-		<!-- Put your scripts inclusions for the head here, they will be included in your website by TypoScript -->
-		<script src="{f:uri.resource(path: 'js/bootstrap.min.js', package: 'MOC.Demo')}"></script>
+	<f:section name="headIncludes">
+		{includes -> f:format.raw()}
 	</f:section>
 </head>
 <body>
