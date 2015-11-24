@@ -12,7 +12,7 @@
       type: string
       defaultValue: ''
       ui:
-        inlineEditable: TRUE
+        inlineEditable: true
         aloha:
           placeholder: 'Indtast en overskrift...'
     image:
@@ -28,3 +28,27 @@
   ui:
     label: 'News article list'
     icon: 'icon-list'
+
+
+'MOC.Demo:CountryList':
+  superTypes:
+    'TYPO3.Neos:Plugin': true
+  ui:
+    label: 'Country list'
+    group: plugins
+    icon: icon-book
+    inspector:
+      groups:
+        descriptions:
+          label: 'Tekster/Beskrivelser'
+          position: 2
+        advanced:
+          label: 'Visninger'
+          position: 4
+  options:
+    pluginViews:
+      Courses:
+        label: List
+        controllerActions:
+          MOC\Demo\Controller\CountryController:
+            - index

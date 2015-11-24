@@ -1,0 +1,15 @@
+<table class="table table-bordered">
+	<thead>
+		<th>Country</th>
+		<th>Capital</th>
+		<th>Population</th>
+	</thead>
+
+	<f:for each="{countries}" as="country">
+		<tr>
+			<td>{country.name}</td>
+			<td>{country.capital}</td>
+			<td>{country.population}</td>
+		</tr>
+	</f:for>
+</table>

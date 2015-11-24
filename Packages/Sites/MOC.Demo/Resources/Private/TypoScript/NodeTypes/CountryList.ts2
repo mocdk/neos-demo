@@ -1,0 +1,6 @@
+prototype(MOC.Demo:CountryList) < prototype(TYPO3.Neos:Plugin)
+prototype(MOC.Demo:CountryList) {
+	package = 'MOC.Demo'
+	controller = 'Country'
+	action = 'list'
+}

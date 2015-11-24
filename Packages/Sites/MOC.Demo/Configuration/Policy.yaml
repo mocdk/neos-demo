@@ -1,0 +1,10 @@
+privilegeTargets:
+  TYPO3\Flow\Security\Authorization\Privilege\Method\MethodPrivilege:
+    MOC_Demo:
+      matcher: method(MOC\Demo\Controller\CountryController->listAction())
+roles:
+  'TYPO3.Flow:Everybody':
+    privileges:
+      -
+        privilegeTarget: MOC_Demo
+        permission: GRANT
