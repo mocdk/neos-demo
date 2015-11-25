@@ -15,6 +15,4 @@ git remote add origin https://github.com/mocdk/neos-demo.git
 git reset --hard origin/master
 ```
 
-Put in the database connection details in your settings file, `Configuration/Development/Settings.yaml` (you can copy the `Settings.yaml.example`)
-
 You can now go through the Neos setup as it will suggest. **Remember to use the MOC.Demo site package when it prompts you.**
